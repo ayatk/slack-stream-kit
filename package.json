@@ -1,0 +1,26 @@
+{
+  "name": "slack-stream-kit",
+  "version": "1.0.0",
+  "description": "",
+  "author": "ayatk",
+  "license": "MIT",
+  "scripts": {
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "yarn lint:eslint --fix",
+    "fix:prettier": "yarn lint:prettier --write",
+    "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
+    "lint:prettier": "prettier . \"!test*\" --check"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-formatter-friendly": "7.0.0",
+    "eslint-plugin-import": "2.23.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.0",
+    "typescript": "^4.3.2"
+  }
+}
